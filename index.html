@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fde4ef;
+            color: #333;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ffb3c1, #fde4ef);
+            position: relative; 
+        }
+
+        .square-container {
+            width: 350px; 
+            height: 400px; 
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-container img {
+            width: 100px; 
+            height: 100px; 
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        input[type="email"], input[type="password"] {
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            cursor: pointer;
+            padding: 10px 20px;
+            border: none;
+            background-color: #ff6392;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e05384;
+        }
+
+        .search-bar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: 160px;
+        }
+
+        .search-bar button {
+            padding: 10px;
+            border: none;
+            background-color: #ff6392;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+            margin-left: 5px;
+        }
+
+        .search-bar button:hover {
+            background-color: #e05384;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="square-container">
+            <div class="profile-container">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg" alt="Profile Image">
+            </div>
+            <form id="loginForm">
+                <center><input type="email" id="email" placeholder="Enter your email" required></center>
+                <center><input type="password" id="password" placeholder="Enter your password" required></center>
+                <br>
+                <center><button type="button" id="loginButton">Log in</button></center>
+            </form>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="button">Search</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginButton').addEventListener('click', function() {
+            window.location.href = 'mainpage.html';
+        });
+    </script>
+</body>
+</html>

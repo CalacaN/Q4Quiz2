@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fde4ef;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #ff6392;
+            padding: 10px 0;
+        }
+
+        header .brand-logo {
+            color: white;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .profile-container {
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-container img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 10px 20px;
+            border: none;
+            background-color: #ff6392;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+            margin: 0 10px;
+        }
+
+        button:hover {
+            background-color: #e05384;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand-logo">My Online Portfolio</div>
+        <nav>
+            <a href="page2.html">First Quarter</a>
+            <a href="page3.html">Second Quarter</a>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="profile-container">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg" alt="Profile Image">
+        </div>
+        <h1>Welcome to Your Portfolio</h1>
+        <p>Select a quarter to view projects.</p>
+    </div>
+</body>
+</html>
